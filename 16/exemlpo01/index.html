@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo01</title>
+</head>
+<body>
+    <form method="get">
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="numero" min="5" max="10" value="10" 
+        required autofocus >
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone">
+        <hr>
+        <label for="datanascimento">Data de nasciemto</label>
+        <input type="date" name="datanascimento" id="datanascimento" min="1993-02-24">
+        <br>
+        <label for="dataehora">data e hora</label>
+        <input type="datetime-local" name="datehora" id="dataehora">
+        <br>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora" value="08:00" min="07:00" max="18:00">
+        <hr>
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor">
+        <hr>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+</html>
