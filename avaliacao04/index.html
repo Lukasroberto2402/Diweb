@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House – Cardápio de Hambúrgueres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Burger House</div>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Início</a>
+            <a href="#cardapio">Hambúrgueres</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>O Melhor Hambúrguer Artesanal da Cidade</h1>
+        <p>Suculento, artesanal e feito com ingredientes frescos.</p>
+        <a href="#cardapio" ></a>
+    </section>
+
+    <section id="cardapio" class="cardapio">
+        <h2>Nossos Hambúrgueres</h2>
+
+        <div class="produtos">
+
+            <article class="item">
+                <img src="img/pexels-andra-325634-918581.jpg" alt="Cheese Burger">
+                <h3>Cheese Master</h3>
+                <p>Hambúrguer 160g, queijo cheddar duplo e molho especial da casa.</p>
+                <span class="preco">R$ 23,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-caricatte-29250659.jpg" alt="Cheese Burger">
+                <h3>Gold Burger</h3>
+                <p>Carne alta 180g, queijo prato, cebola roxa e molho golden.</p>
+                <span class="preco">R$ 25,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-cristian-rojas-8477417.jpg" alt="Cheese Burger">
+                <h3>Big House</h3>
+                <p>Duas carnes smash, queijo cheddar, pickles e molho da casa.</p>
+                <span class="preco">R$ 29,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-daniel-reche-718241-1556688.jpg" alt="Cheese Burger">
+                 <h3>Urban Burger</h3>
+                <p>Carne 160g, queijo prato, cebola caramelizada e maionese artesanal.</p>
+                <span class="preco">R$ 26,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-daniel-reche-718241-1556698.jpg" alt="Cheese Burger">
+                <h3>Tradicionalzão</h3>
+                <p>Pão clássico, carne artesanal, queijo prato, alface e tomate.</p>
+                <span class="preco">R$ 21,90</span>
+
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-daniel-reche-718241-3616956.jpg" alt="Cheese Burger">
+                <h3>O Clássico da Casa</h3>
+                <p>Carne premium 180g, queijo duplo e molho signature.</p>
+                <span class="preco">R$ 27,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-dima-valkov-1186343-3864681.jpg" alt="Cheese Burger">
+                <h3>Cheddar Supreme</h3>
+                <p>Hambúrguer 160g coberto com cheddar cremoso e cebola crispy.</p>
+                <span class="preco">R$ 28,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-dima-valkov-1186343-3864682.jpg" alt="Cheese Burger">
+                <h3>Três Queijos Burger</h3>
+                <p>Prato, cheddar e muçarela derretidos sobre carne artesanal.</p>
+                <span class="preco">R$ 31,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-1552641.jpg" alt="Cheese Burger">
+                <h3>Cheese Explosion</h3>
+                <p>Explosão de queijo cheddar e prato com toque de páprica defumada.</p>
+                <span class="preco">R$ 32,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-2267538.jpg" alt="Cheese Burger">
+                <h3>Cheddar Melt</h3>
+                <p>Cheddar cremoso derretido sobre carne smash dupla.</p>
+                <span class="preco">R$ 34,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-2271099.jpg" alt="Cheese Burger">
+                <h3>Creamy Burger</h3>
+                <p>Hambúrguer 180g com creme de queijo especial da casa.</p>
+                <span class="preco">R$ 30,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-2271101.jpg" alt="Cheese Burger">
+                <h3>Bacon Lovers</h3>
+                <p>Carne 180g, cheddar e MUITO bacon crocante.</p>
+                <span class="preco">R$ 33,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-2282528.jpg" alt="Cheese Burger">
+                <h3>Bacon Smash</h3>
+                <p>Duas carnes smash, cheddar e bacon caramelizado.</p>
+                <span class="preco">R$ 35,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-2282532.jpg" alt="Cheese Burger">
+                <h3>Bacon & Cheese Deluxe</h3>
+                <p>Carne premium, cheddar duplo e bacon extra.</p>
+                <span class="preco">R$ 36,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-2282536.jpg" alt="Cheese Burger">
+                <h3>Bacon Monster</h3>
+                <p>Dois hambúrgueres altos, cheddar e bacon em dobro.</p>
+                <span class="preco">R$ 39,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-3219483.jpg" alt="Cheese Burger">
+                <h3>Double Bacon Attack</h3>
+                <p>Smash duplo com bacon frito e molho especial.</p>
+                <span class="preco">R$ 37,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-enginakyurt-3228803.jpg" alt="Cheese Burger">
+                <h3>Prime Angus Burger</h3>
+                <p>Hambúrguer Angus 200g, queijo gouda e cebola caramelizada.</p>
+                <span class="preco">R$ 42,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-foodie-factor-162291-551991.jpg" alt="Cheese Burger">
+                <h3>Burger Supreme</h3>
+                <p>Carne alta 200g, queijo suíço e maionese temperada.</p>
+                <span class="preco">R$ 39,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-horizon-content-2100060-3738730.jpg" alt="Cheese Burger">
+                <h3>Fire Grill Burger</h3>
+                <p>Carne grelhada no fogo, queijo prato e molho defumado.</p>
+                <span class="preco">R$ 38,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-maria-fernanda-perez-1038050-2128536.jpg" alt="Cheese Burger">
+                <h3>Black Smoke</h3>
+                <p>Pão dark, cheddar e carne defumada lentamente.</p>
+                <span class="preco">R$ 43,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-mounir-salah-2974452-14678765.jpg" alt="Cheese Burger">
+                <h3>Texas Grill</h3>
+                <p>Carne 200g, queijo prato, onion rings e molho barbecue.</p>
+                <span class="preco">R$ 41,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-mustata-silva-102497380-12025834.jpg" alt="Cheese Burger">
+                <h3>Rustic Gourmet</h3>
+                <p>Hambúrguer artesanal, queijo gouda e cogumelos salteados.</p>
+                <span class="preco">R$ 44,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-narclique-660282.jpg" alt="Cheese Burger">
+                <h3>Veggie Green</h3>
+                <p>Hambúrguer vegetal, maionese vegana e salada fresca.</p>
+                <span class="preco">R$ 26,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-the-castlebar-3902897-15662255.jpg" alt="Cheese Burger">
+                <h3>Nature Burger</h3>
+                <p>Hambúrguer de grão-de-bico com molho verde especial.</p>
+                <span class="preco">R$ 24,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-valeriya-11213786.jpg" alt="Bacon Burger">
+                <h3>Bacon Burger</h3>
+                <p>Carne artesanal, queijo cheddar e bacon crocante.</p>
+                <span class="preco">R$ 27,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-valeriya-1639557.jpg" alt="Double Smash">
+                <h3>Vegan Power</h3>
+                <p>Proteína vegetal, tomate fresco e queijo vegano.</p>
+                <span class="preco">R$ 28,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-valeriya-1639562.jpg" alt="Veggie Burger">
+                <h3>Plant Energy</h3>
+                <p>Hambúrguer plant-based com maionese de ervas.</p>
+                <span class="preco">R$ 27,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+            <article class="item">
+                <img src="img/pexels-valeriya-1639565.jpg" alt="Veggie Burger">
+                <h3>Hot Chili Burger</h3>
+                <p>Hambúrguer picante com jalapeños e molho chili house.</p>
+                <span class="preco">R$ 31,90</span>
+                <button onclick="openModal()" class="btn-item">Detalhes</button>
+            </article>
+
+
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            A Burger House é especializada em hambúrguer artesanal com ingredientes frescos,
+            carnes selecionadas e combinações únicas. Nosso objetivo é entregar sabor e qualidade
+            em cada mordida.
+        </p>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+
+        <form class="form">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>  Burger House – Venham prestigiar os melhores Hambúrgueres do Brasil</p>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Informações do Produto</h3>
+            <p>
+                Hambúrguer artesanal feito com ingredientes frescos e selecionados.
+                Prepare-se para uma experiência única!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        hamburger.onclick = () => {
+            nav.classList.toggle("active");
+        };
+
+        function openModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
